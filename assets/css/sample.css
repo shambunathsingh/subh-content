@@ -1,0 +1,477 @@
+/***** font import *****/
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,800');
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+}
+
+/***** general styles ****/
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 125px;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 300%;
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.jumbtoron,
+section {
+    height: 650px;
+    width: 100%;
+    display: block;
+    transform-style: inherit;
+}
+
+/******** navbar *****************/
+/* this produces full width jumbotron */
+.navbar {
+    margin-bottom: 0px !important;
+    background-color: #47302f !important;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.navbar li a:hover {
+    background-color: #514646;
+    color: #fff;
+}
+
+/********* end navbar *********/
+
+/***** parallax effect styles *****/
+
+.parallax {
+    perspective: 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/***** end parallax effect *****/
+
+/***** multiple section styles *****/
+#about,
+#contact {
+    height: 600px;
+}
+
+#about,
+#contact {
+    padding: 60px 0;
+}
+
+#about,
+#portfolio {
+    color: #fff;
+}
+
+/***** jumbotron section *****/
+
+.jumbotron {
+    height: 550px;
+    margin-bottom: 0;
+    color: #47302f;
+    background: url('https://lh3.googleusercontent.com/7z7zc2pSHEKiae_VSBckH30gQeSRJEU6gCgfKxbtCeUGWPQ1qzXOjRG7eb5kzQGAOGig4_tMPTt0hzPNR5lhJEvJGfvBs00tjAE9_fHSd_8Da6k2kDIKgy9qqs7RBWJwCT2SQG830x7H5cRNeC9Hfjrr0cAq-7Bmd6i5R5nSEy4ZyMrYb8yAt2xEeW81jJb0u3MDPlbO0Or5nXnMXF_Vd5TKsfn4MhqiS-6ptBz_1RBvs3aLfigQl64pSrwRwVAJfECmMABWosN-5Y5Qh4g8ebi7CYJcT6LH_zl9stO5bIpfqZkVeU3AsGNVLY1Eq4Glt-07R3tkfq1LpD6-KX8QSZDrXgXt0Nnp7qpM8xJsZ5QkAInpktjBhsRQLNuwMOOKodhmI981wCEIct1fQQanyJL99ybvr3DBESaLFCXKtK0Vm2zZ6SbrER8BMYVwglTm7cFNVY5_4ptD7g2XwCErsb6adO4eq90W1WJ6CJc-KllRPWSQRqG8v6Mvm9d-iPTMK_cm4cz7Qp9oeAToEpWo9m_rXr6RgxWeCg_HSKcfI7w=w722-h458-no') no-repeat fixed;
+    background-size: cover;
+}
+
+.jumbotron h1 {
+    font-size: 350%;
+    font-weight: 700;
+}
+
+.btn-brown {
+    background-color: #514646;
+    color: #fff;
+    border-radius: 0;
+    box-shadow: 5px 8px 5px -4px rgba(0, 0, 0, 0.71);
+    -webkit-box-shadow: 5px 8px 5px -4px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: 5px 8px 5px -4px rgba(0, 0, 0, 0.71);
+    transition: transform 0.6s ease;
+}
+
+.btn-brown:hover {
+    background-color: #47302f;
+    color: #fff;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#jumbo-rule {
+    border-top: 3px solid #47302f;
+}
+
+#upper-nav li,
+#footer-nav li {
+    display: inline-block;
+}
+
+#upper-nav li {
+    padding: 0 12px;
+}
+
+/***** end welcome section *****/
+
+/***** about section ******/
+#about {
+    background: url('https://lh3.googleusercontent.com/ySmT3Jbl1FK-FilTe9Po1PvJNh_qsESwqScbV2rY7OMyQJtdsPFMTDxig76MHUfBHJVo7ruLeNo-JZboFCJVugmgTDGuEWEgJW44Xo6oY1F_c6-UV6HkpTQWros8Xr7za_eAZQdW06ELYp1dytEN1zs_ZQhwIkhJQnHl1aEBycsfXbhqpsMo9el_TNLhWdL0ngV5gzWEfI6dIQt39jJj6GkdQhEfd8KwJU9SOmJWL-cEYoceZWRiwicpd9BZ07bwnyP2Bu4NT3_-kapky_X1YnsaMwQj7UvUS9E7w4mfm-7zfsfHvqtCLjqgwFd7sHBmRuRr8_nCYjkSA14o4SIikfnoVqQn5ZGicBiuGBebBJn0uq2ml9PasrrB2X3-B_ggnCJjTSqYwxMwHrYrc9T8dNeuJWuSzxICtKPAUdSw881hlqui8vU7e8u-fxLOYDzwlm7Lz5u_6PP7XfJ_m0AcMGrhfNluat-DsN6VxtbBZpP8Z3MmuJXsMh2JetFuihN-75seuz_qdUesSInBtidZt5fYdlibmKCLZwh2rXQ_6gU=w1082-h686-no') no-repeat fixed;
+    background-size: cover;
+}
+
+#about .row {
+    /*background-color: #000;*/
+    background-color: #2B2215;
+    opacity: 0.9;
+    color: #fff;
+    padding: 20px 0;
+    margin-left: 8%;
+}
+
+#about .col-md-9 p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    margin: 2% 5%;
+}
+
+#about .col-md-9 h2 {
+    margin-left: 5%;
+}
+
+#about .col-md-3 img {
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-top: 40%;
+    margin-left: -20%;
+    width: 90%;
+}
+
+/***** end about section *****/
+
+/***** portfolio section *****/
+
+#portfolio {
+    height: 800px;
+    padding: 40px 0 40px 0;
+    background: url('https://lh3.googleusercontent.com/nTyL32k5zvWNNwjBP3KCNI4VapIz-DcMRy_tZLNiO20vyRcOgChTgL-hx9gEzQkewbafBVMV7S8RxUDGPsilCt5fYNcFLT6Kv9UYnmkKQOq3iFMT-PXZgXGg3rpP-dMscZbV0yuZFtxQu4bJkp6QVSdaB5sB-R64bR_D7P3RDpBXgVL7WIcf1P_eq99ZxOxh9VNF2iKBMmIb4wcO8RFLeKOMq47F3v7mU0qQPjdg18R2DhcGucEp6FldI4XHnjcogqyGwEKZ-rhOyCx1KJd--Yrlw8bicKx-9qOKE8BJxJYakQ4OZbWz1A35lSu_DXV6t52oH_8H3SGUu2iwa7aMuQPZRxHmEj7wiLYRqiNN8xuL__iN4ov9M0EPTfVNUUpY-zG8tXnoNXP8lgM4L0hFFMBOijkuuM6AVlgrIofVc-noV0fPgryxys7jKHjFi_XBi9VhwgucgyB1mZQl0FXuZ8ezu7VqKfTCW7Si6Do0ddevfi6cliwWZz9N6ME2JKn_HUJ6JqR7RjCoVdMhj_1ANIhOuUsZ99pVv2OjcRz0WZM=w489-h310-no') no-repeat fixed;
+    background-size: cover;
+    color: #47302f;
+}
+
+#portfolio .panel {
+    width: 95%;
+    background-color: #fff;
+    padding: 0;
+    border-radius: 0;
+    border: 0;
+    box-shadow: 10px 12px 7px -4px rgba(0, 0, 0, 0.71);
+    -webkit-box-shadow: 5px 8px 5px -4px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: 5px 8px 5px -4px rgba(0, 0, 0, 0.71);
+}
+
+#portfolio h1 {
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+#portfolio p {
+    font-size: 130%;
+    font-weight: bold;
+}
+
+#portfolio .row {
+    padding: 5px 0;
+    z-index: 5;
+}
+
+#portfolio .panel-heading {
+    position: relative;
+    height: 175px;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+#portfolio .panel-heading img {
+    width: 100%;
+}
+
+#portfolio .panel:hover .overlay {
+    display: block;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    height: 175px;
+    opacity: 0.6;
+    background: #000 center center;
+}
+
+#portfolio .panel:hover .overlay:before {
+    color: #fff;
+    font-size: 700%;
+    margin-top: 50%;
+    opacity: 0.4;
+}
+
+/* individual icons on overlays */
+#portfolio .panel:hover #panel1 .overlay:before,
+#portfolio .panel:hover #panel3 .overlay:before,
+#portfolio .panel:hover #panel4 .overlay:before,
+#portfolio .panel:hover #panel5 .overlay:before,
+#portfolio .panel:hover #panel6 .overlay:before {
+    font-family: 'FontAwesome';
+    content: '\f1cb';
+}
+
+#portfolio .panel:hover #panel2 .overlay:before {
+    font-family: 'FontAwesome';
+    content: '\f09b';
+}
+
+/* #portfolio .panel-body {
+  
+} */
+
+#panel1 {
+    background: url('https://lh3.googleusercontent.com/ESClnJX8Sruu98Jqik7W7Hg0QplJEAwUI0BdsFNA2jr2GeGo38cCu5gHM9-2tFL73fuMwx7PaM_ttZiwcCKMFVVBHymysMN7uTMCbmFRed4rAeMHmE6pNLko5nFaCMhkUlhGm1OvVtpa4VnnXET3o389k-RszsKCqIifjlZzSywJgnfx082V6Db5BCPSa0Ec5rUbmDa7eqnks-LTnfMz_y6VjhzM_XtI3JtHrw9fzg2qADmb92l2Tei-5bQDs1_5rPav7pYK4qYYrOmNPZSk2TxC7hXc45dtKWIVaNLvkvZz3bTRCLmzyM2R_Agc_riel8TR23deGy7wCd7lnY63nZFPsq9C1t2eK9ZkFHuak1K7G11WRps4Mww0eihRgkwQlQZN3puOgethKSvupVu0qz23ITlf4nA69IEyYcX0IQJ8YED2PcuRj2h1qf9E-eH64MQHrGa5nyFyF2HkcuNkEVkemyRaZRGSjAaH512hMAqRiHTkFaBIh3XTojY1Mq_CYfO_kvKkFN9NVg-QECuvUwkUi-WiNK7wVZvlX9Fu9Pg=w600-h414-no') no-repeat;
+}
+
+#panel2 {
+    background: url('https://lh3.googleusercontent.com/B9fFNg0TTZiHrceKaRiTVh3XPjH_aOXJlRnfWKkTgo80eGytsEwPSycIeliC83ZPBSnjeFOjKXNj3f3YDfA3-DI423U4c5l_UGMMLID03OGWdXF7XswnHORsITqQtZxfO5SI3sAgKvPLpqHArPVHQ70vzYan9JdVaj7yLYrtxbBgiUH_RYpde-__vB8-OE8aCoPvT_Cc9qb37zfGCeTgP0OelFLeYWwduoJJXiQhdxAelDF5ZinY99MmO9N1ZPlAOFVQiqKpX-0WJckQEgbzIuwqXKoWMIgKeG9y2SyXxSGKg7-GBJLUlsDGuMf6ZX0QtGtXDKo7_1BVtIaVnsovCDZOnKQ0EiS6t---3gIe9Po9-ZUaXErVYbhdNtncgB45zWhT1sOJLOsjAtFB1Po9TfpOfB0UGwnVI3giSrWWsLys3Zj5xu4T5GgiD7ECSCaF9WvLByKaEXtL6FVdKS1-C0FDsgE59_Pmm0pMQEjMj5XULomkKiR3rggUs90yNNXyUWnu0uDyuBLruwRiNrDOzwypdeRaKvfvos-tzZtbTBY=w639-h367-no') no-repeat;
+}
+
+#panel3 {
+    background: url('http://placekitten.com/g/200/250') no-repeat;
+}
+
+#panel4 {
+    background: url('https://lh3.googleusercontent.com/UkpsCeGZvMM9aBLb8seI990I3l2CNujGwFdW1VIx6ugbJ2VKzOUGWDq4J-Q4M6Xa8XHt_tU8bVrBcfbYnA9O3SXQ8L_2fpBBxGD1ohFj-HEQ9JEjNKpqXFDMADDIcK_lzdUexGxLqE9tz2ZSkXKirutHpIEe2GGuQVX2Yl3IS6yVXdiwUXbtb9HagPwlIBAz-UZUHFTcqulYJB-RE6CXlFdVwlFZ9Y-SF4CN4LGhtFh0n-n0H_Z6BtBTqTEn4gJ9Phe6qJvxpSKR34Qc4zsHzo3G6ZbOSQEQoOMWqr2KKQDd8yMFRs5QF726Y3mCtwleRyCcT0d_dPl_RGSfSOa-SRRCd_yXQQ44LpCCbBjLRcwlbubEqoa-6cEuurB1ao-9T5GcX3kjii4hpRQty2PAC1tF7aQWIHkFSjcpNSglr0Mdc5dMp2aXQ5beP_ZzqVRaENQRqGkcsouNYwCZg0wmUTFX0EZglu4i_nAFrQ4-u0lS0aGRwsndMoqVYmIBrpfhF8SExy3VMv3hoE9jcmuqaZbULesq1zpDfJ6DmoFniI4=w650-h485-no') no-repeat;
+}
+
+#panel5 {
+    background: url('http://placekitten.com/g/200/250') no-repeat;
+}
+
+#panel6 {
+    background: url('https://lh3.googleusercontent.com/FXfFn-B-pi1GcEj9ef1fSvdrqaeIIPVXKRJkKc4blf7nl7XLs3dVYIHiyU37m5SO2SgHVsNmxyK7upApYJRwA3OhL7I9yePFoJVOSHKq0Z_iWUTktIrEqYIfLhYV7BPtnJyPBPVP7sDcqlKoA40u57ci-RmOZ6vdR75jspf57zh_9xCrikBFbLV5x2NDjNP5GETLObpUG75vRHzkD_kdW5ujF-0BVTQfczDa1FNY8nvg99xNWGARezhdy3848oX8fxToknnurzrdR7fDSjTPro71JPSKJ9OrltMo6UUiWxGzTBQPXBnmXSHfaW1OD_W0Uyjx4UB0ivWr9SL7StV28aw-axmRx4EtGSRlKtGQf3iScBu52ce5HJK3FhxC_99GKmPGIMZGM8tpVF708ZaOY4mIdVihAcz61O289TPEUFKyDX2BaNBMT-uX2MTJNHQ_fYgJkD-Nzb6-cGTbExDY3oZjYY6EkXjjdIiuvGUgYsRUvKgouyCEWiWuSsJP-qka4R17mdBgOIfXBMVe77K2vY34n-F3gj3dHgqn2HRzy3o=w650-h485-no') no-repeat;
+}
+
+/***** end portfolio *****/
+
+/***** contact section *****/
+#contact {
+    background: url('https://lh3.googleusercontent.com/pDw5Q8c8-jkh7cZ7rgAXWjyNevv0FQU5WSMMXyEToLbcSqV-pv1UMgxMHfF8KzWeFSag6GJqIZnnUDkkIWVZoBqVIUO-LbwvJ2XJ_Uoyiyk8yu4LErr7R6zKiSKV0neZEFhOalrRVVFhYuVaOuQEE2Duvw_rd4WrlGy_Gx35ZM4iW_QOMspDG4YSgGDp3_fQhrzJrTw42AjVKmJ1zoeZ09ya4TAfysk_AjpWiI5m0kRyBE1uVbGHg6WRKeBzWSTP6t6DJ8oVSg6ibvUQruGJdw4cf5VlUdO7MuHUUL4ONC-ncn67MKDdTHvD6YRtDE5dpXI-hUDHO0iHnc-VgIPGK3Rw1nl2h5D2y6a6mnLBru3X6UwCeVQyrQoz0RtoWNF-w2pkmFia4aqhkmx8c8uRgYg1uoNcOVwuwump_q7UsmpZiK6RNjov1trSssyrvJsnGoNBM0FeM0r08RB-KBr8h74ypLbdQLhfx8oLtxfGR0QUXhwZK9s-qOse8bflzEQDtuHI-d0f_d-K6ph_HYLeCuwCGYKjYAveHU1JQ6QjVak=w1082-h686-no') no-repeat fixed 100%;
+    background-size: cover;
+}
+
+#contact .row {
+    background-color: #2B2215;
+    color: #fff;
+    opacity: 0.9;
+    padding: 20px 0;
+    margin-left: 8%;
+}
+
+#contact h2 {
+    margin-left: 3%;
+    font-size: 200%;
+    line-height: 1.5em;
+}
+
+#contact #email {
+    color: #ccc !important;
+}
+
+#contact #email:hover {
+    text-decoration: underline !important;
+}
+
+#contact ul li {
+    padding: 10px 0;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin: 2% 5%;
+}
+
+.btn-contact {
+    background-color: #fff;
+    color: #47302f;
+    border-radius: 0;
+    box-shadow: 5px 8px 5px -4px rgba(0, 0, 0, 0.71);
+    -webkit-box-shadow: 5px 8px 5px -4px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: 5px 8px 5px -4px rgba(0, 0, 0, 0.71);
+    transition: transform 0.7s ease;
+}
+
+.btn-contact:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    color: #47302f;
+}
+
+/***** end contact *****/
+
+/* produces a sticky footer in Bootstrap */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 125px;
+    background-color: #47302f !important;
+    color: #fff;
+    font-size: 90%;
+}
+
+#footer-nav {
+    margin-left: -4%;
+    margin-top: 3%;
+}
+
+.footer #footer-nav li a {
+    color: #fff;
+    padding-right: 12px;
+}
+
+.footer #footer-nav li a:hover {
+    color: #ccc;
+    padding-right: 12px;
+}
+
+.footer p {
+    line-height: 4em;
+}
+
+/***** end footer *****/
+
+/***** media queries *****/
+@media screen and (max-width: 968px) {
+    #about .col-md-9 {
+        display: inherit;
+    }
+
+    @media screen and (max-width: 768px) {
+
+        section {
+            padding: 15px 0 !important;
+        }
+
+        section h1,
+        h2 {
+            font-size: 200%;
+        }
+
+        #about .row {
+            display: block;
+        }
+
+        #about img {
+            border: 2px solid #fff;
+            margin-top: 20%;
+            margin-left: -10%;
+        }
+
+        #contact {
+            height: 550px;
+        }
+
+        #contact .row {
+            margin-top: 5%;
+            padding: 10px 0;
+        }
+
+    }
+
+    @media screen and (min-width: 480px) {
+
+        body {
+            width: 100%;
+        }
+
+        .navbar {
+            display: block;
+            text-align: center;
+        }
+
+        .navbar-collapse {
+            width: 100%;
+        }
+
+        .navbar-brand {
+            margin: 0;
+        }
+
+        .navbar-mobile {
+            background-color: #514646;
+        }
+
+        .navbar-mobile .icon-bar {
+            background-color: #47302f;
+        }
+
+        h1,
+        h2 {
+            font-size: 150%;
+        }
+
+        .jumbotron,
+        #about,
+        #contact {
+            font-size: 85%;
+            max-height: 500px;
+        }
+
+        section {
+            padding: 10px 0 !important;
+        }
+
+        #upper-nav li {
+            display: block;
+            padding: 6px 0;
+        }
+
+        #about .col-md-3 {
+            display: none;
+        }
+
+        #portfolio {
+            display: block;
+        }
+
+        #contact .row {
+            margin: 2%;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            margin: 0;
+        }
+    }
+}
